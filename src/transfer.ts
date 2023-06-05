@@ -1,7 +1,9 @@
 import {WarpFactory} from 'warp-contracts';
 import path from 'path';
 import * as fs from 'fs';
-const contractId = '-8A6RexFkpfWwuyVO98wzSFZh0d6VJuI-buTJvlwOJQ';
+//const contractId = '-8A6RexFkpfWwuyVO98wzSFZh0d6VJuI-buTJvlwOJQ';
+const contractId = 'VFr3Bk-uM-motpNNkkFg4lNW1BMmSfzqsVO551Ho4hA';
+
 const warp = WarpFactory.forMainnet()
 const contract = warp.contract(contractId);
 
