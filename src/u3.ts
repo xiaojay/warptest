@@ -1,7 +1,6 @@
-import {WarpFactory} from 'warp-contracts';
+import { defaultCacheOptions, WarpFactory} from 'warp-contracts'
 const contractId = 'rO8f4nTVarU6OtU2284C8-BIH6HscNd-srhWznUllTk';
-const warp = WarpFactory.forMainnet()
-
+const warp = WarpFactory.forMainnet(defaultCacheOptions, true)
 const c = warp.contract(contractId).setEvaluationOptions({
   internalWrites: true,
   allowBigInt: true,
@@ -19,3 +18,4 @@ async function getState() {
 }
 
 getState()
+

@@ -1,13 +1,7 @@
-import {WarpFactory} from 'warp-contracts';
-const contractId = 'rO8f4nTVarU6OtU2284C8-BIH6HscNd-srhWznUllTk';
-const warp = WarpFactory.forMainnet()
-
-const c = warp.contract(contractId).setEvaluationOptions({
-  internalWrites: true,
-  allowBigInt: true,
-  unsafeClient: "skip"
-});
-
+import { defaultCacheOptions, WarpFactory} from 'warp-contracts'
+const contractId = '-8A6RexFkpfWwuyVO98wzSFZh0d6VJuI-buTJvlwOJQ';
+const warp = WarpFactory.forMainnet(defaultCacheOptions, true)
+const c = warp.contract(contractId)
 async function getState() {
   try {
     const { sortKey, cachedValue } = await c.readState();
@@ -19,3 +13,4 @@ async function getState() {
 }
 
 getState()
+
