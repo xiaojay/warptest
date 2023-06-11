@@ -22,11 +22,15 @@ const warp = WarpFactory.custom(
   .setInteractionsLoader(arLoader)
   .build();
 
-const bar = warp.contract(contractId);
+const u = warp.contract(contractId).setEvaluationOptions({
+  internalWrites: true,
+  allowBigInt: true,
+  unsafeClient: "skip"
+});
 
 async function getBarState() {
   try {
-    const { sortKey, cachedValue } = await bar.readState();
+    const { sortKey, cachedValue } = await u.readState();
 
     console.log(sortKey, cachedValue.errorMessages, cachedValue.state, cachedValue.validity)
   } catch (error) {
