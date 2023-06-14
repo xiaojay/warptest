@@ -15,4 +15,3 @@ async function getState() {
 }
 
 getState()
-
