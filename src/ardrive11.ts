@@ -1,15 +1,9 @@
-import {WarpFactory} from 'warp-contracts';
-const contractId = 'rO8f4nTVarU6OtU2284C8-BIH6HscNd-srhWznUllTk';
+import {WarpFactory, SourceType} from 'warp-contracts';
+const contractId = '-8A6RexFkpfWwuyVO98wzSFZh0d6VJuI-buTJvlwOJQ';
 const warp = WarpFactory.forMainnet()
-
-//const c = warp.contract(contractId).setEvaluationOptions({
-//  internalWrites: true,
-//  allowBigInt: true,
-//  unsafeClient: "skip"
-//});
-
-const c = warp.contract(contractId)
-
+const c = warp.contract(contractId).setEvaluationOptions({
+  sourceType: SourceType.ARWEAVE
+});
 async function getState() {
   try {
     const { sortKey, cachedValue } = await c.readState();
@@ -21,3 +15,4 @@ async function getState() {
 }
 
 getState()
+
