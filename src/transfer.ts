@@ -23,4 +23,4 @@ async function transfer(to: string, amount: number) {
   }
 }
 
-transfer("eECc1hPLwuAz-Xy-UNpELifAe2THa11rhw17ProI_Fgs", 1);
+transfer("FyINHRSrHW0teUhvJzd6R33Tl50qxLnSj8LJCP5puiI", 1);
