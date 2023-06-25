@@ -1,5 +1,5 @@
 import {WarpFactory} from 'warp-contracts';
-const contractId = 'rO8f4nTVarU6OtU2284C8-BIH6HscNd-srhWznUllTk';
+const contractId = 'KTzTXT_ANmF84fWEKHzWURD1LWd9QaFR9yfYUwH2Lxw';
 const warp = WarpFactory.forMainnet()
 
 //const c = warp.contract(contractId).setEvaluationOptions({

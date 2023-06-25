@@ -2,7 +2,7 @@ import {WarpFactory} from 'warp-contracts';
 import path from 'path';
 import * as fs from 'fs';
 const contractId = 'rO8f4nTVarU6OtU2284C8-BIH6HscNd-srhWznUllTk';
-
+//const contractId = 'TlqASNDLA1Uh8yFiH-BzR_1FDag4s735F3PoUFEv2Mo';
 const warp = WarpFactory.forMainnet()
 const contract = warp.contract(contractId);
 
@@ -23,4 +23,4 @@ async function transfer(to: string, amount: number) {
   }
 }
 
-transfer("FyINHRSrHW0teUhvJzd6R33Tl50qxLnSj8LJCP5puiI", 1);
+transfer("2", 10);

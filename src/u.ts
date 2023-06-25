@@ -9,7 +9,7 @@ const arweave = Arweave.init({
 });
 
 const arLoader = new ArweaveGatewayBundledInteractionLoader(arweave, 'mainnet');
-const contractId = 'rO8f4nTVarU6OtU2284C8-BIH6HscNd-srhWznUllTk';
+const contractId = 'KTzTXT_ANmF84fWEKHzWURD1LWd9QaFR9yfYUwH2Lxw';
 const warp = WarpFactory.custom(
   arweave,
   {
