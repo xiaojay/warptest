@@ -1,8 +1,8 @@
 import {WarpFactory} from 'warp-contracts';
 import path from 'path';
 import * as fs from 'fs';
-const contractId = 'rO8f4nTVarU6OtU2284C8-BIH6HscNd-srhWznUllTk';
-//const contractId = 'TlqASNDLA1Uh8yFiH-BzR_1FDag4s735F3PoUFEv2Mo';
+//const contractId = 'KTzTXT_ANmF84fWEKHzWURD1LWd9QaFR9yfYUwH2Lxw';
+const contractId = 'TlqASNDLA1Uh8yFiH-BzR_1FDag4s735F3PoUFEv2Mo';
 const warp = WarpFactory.forMainnet()
 const contract = warp.contract(contractId);
 
@@ -23,4 +23,4 @@ async function transfer(to: string, amount: number) {
   }
 }
 
-transfer("2", 10);
+transfer("8PpH2ICURWN8B8w2_J85ejNwXJCb229_4PgWEVTrlxM", 1000000000000);
