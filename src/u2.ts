@@ -1,4 +1,4 @@
-import {WarpFactory} from 'warp-contracts';
+import {WarpFactory} from 'warp-contracts-temp';
 const contractId = 'KTzTXT_ANmF84fWEKHzWURD1LWd9QaFR9yfYUwH2Lxw';
 const warp = WarpFactory.forMainnet()
 

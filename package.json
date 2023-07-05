@@ -25,6 +25,7 @@
     "@types/node": "^20.3.1",
     "warp-contracts": "^1.4.12",
     "warp-contracts-lmdb": "^1.1.10",
-    "warp-contracts-plugin-vm2": "^1.0.2"
+    "warp-contracts-plugin-vm2": "^1.0.2",
+    "warp-contracts-temp": "^1.4.14"
   }
 }
