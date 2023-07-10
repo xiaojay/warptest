@@ -9,8 +9,6 @@ const c = warp.contract(contractId).setEvaluationOptions({
  sourceType: SourceType.ARWEAVE
 });
 
-//const c = warp.contract(contractId)
-
 async function getState() {
   try {
     const { sortKey, cachedValue } = await c.readState();
