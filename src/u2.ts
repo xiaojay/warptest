@@ -1,11 +1,12 @@
-import {WarpFactory} from 'warp-contracts-temp';
+import {WarpFactory, SourceType} from 'warp-contracts';
 const contractId = 'KTzTXT_ANmF84fWEKHzWURD1LWd9QaFR9yfYUwH2Lxw';
 const warp = WarpFactory.forMainnet()
 
 const c = warp.contract(contractId).setEvaluationOptions({
  internalWrites: true,
  allowBigInt: true,
- unsafeClient: "skip"
+ unsafeClient: "skip",
+ sourceType: SourceType.ARWEAVE
 });
 
 //const c = warp.contract(contractId)
