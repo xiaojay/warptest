@@ -6,7 +6,7 @@ const c = warp.contract(contractId).setEvaluationOptions({
  internalWrites: true,
  allowBigInt: true,
  unsafeClient: "skip",
- sourceType: SourceType.ARWEAVE
+ sourceType: SourceType.BOTH
 });
 
 async function getState() {
